@@ -127,6 +127,8 @@ button {
   padding: 24px;
   border-radius: 4px;
   width: 400px;
+  font-weight: 400;
+  font-size: 16px;
 
   border: 1px solid #616161;
 }

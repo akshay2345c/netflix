@@ -11,7 +11,7 @@
   --text-color: white;
   --bg-color: black;
   --card-bg-color: #1b1c39;
-  --toggle-text-bg-color: #414141;
+  --toggle-text-bg-color: #212121;
 }
 
 /* .overlay {
@@ -38,23 +38,23 @@
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
+  padding-top: 20px;
 }
 .nav-left img {
+  height: 100x;
   width: 200px;
-  height: 100px;
 }
 .nav-right {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   justify-items: center;
-  padding: 5px;
+  margin: 5px;
 }
 .lang {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 5px;
 }
 button {
   background-color: var(--btn-bg);
@@ -62,23 +62,20 @@ button {
 
   text-align: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 2vh;
   border-radius: 4px;
-  padding: 8px 15px;
-  margin-left: 5px;
   cursor: pointer;
+  padding: 5px 5px 5px 5px;
+  margin-left: 5px;
 }
 .dropdown {
   background-color: transparent;
   color: var(--text-color);
   text-align: center;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 14px;
+  font-size: 2vh;
+  padding: 5px 10px 5px 10px;
   border-radius: 4px;
-  padding: 8px 25px;
-  margin-left: 5px;
   border: 1px solid #616161;
   cursor: pointer;
 }
@@ -92,15 +89,17 @@ button {
   margin-top: 150px;
 }
 .header1 {
-  color: var(--text-color);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
 }
 .header1 h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 56px;
+  font-size: 7vh;
   font-weight: 900;
-  line-height: 70px;
   text-align: center;
-  padding-bottom: 25px;
+  color: var(--text-color);
 }
 .header1 h3 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -109,59 +108,73 @@ button {
   line-height: normal;
   text-align: center;
   padding-bottom: 35px;
+  color: var(--text-color);
 }
-.header1 h6 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  text-align: center;
-  padding-bottom: 15px;
-}
+
 .email-con {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+}
+.email-header h6 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2vh;
+  font-weight: 500;
+  text-align: center;
+  color: var(--text-color);
+}
+.email-main {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .email input {
   background-color: transparent;
   color: var(--text-color);
-  text-align: start;
-  padding: 20px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px 200px 20px 10px;
   border-radius: 4px;
-  width: 400px;
   font-weight: 400;
-  font-size: 16px;
-
+  font-size: 2vh;
   border: 1px solid #616161;
 }
-.email placeholder {
-  text-align: start;
-}
+
 .button {
   background-color: var(--btn-bg);
   color: var(--text-color);
-  text-align: center;
   font-weight: 500;
   font-size: 24px;
-  line-height: 24px;
-  padding: 15px 20px;
-  text-align: center;
   cursor: pointer;
+  padding: 15px 5px 15px 5px;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 .button i {
-  font-size: 30px;
+  font-size: 3vh;
   text-align: center;
 }
+
 .curve-main {
-  background-color: #0f0f0f;
+  background-color: #070707;
 }
 .curve {
   width: 100%;
   height: 100px;
-  border: 5px solid;
-
-  background: linear-gradient(rgb(16, 24, 56), black);
-  border-radius: 50%/100px 100px 0 0;
+  border: 5px solid transparent;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 50%/20px 20px 0 0;
+  background: linear-gradient(rgb(16, 24, 56), black) padding-box,
+    radial-gradient(
+      rgb(62, 19, 38) 40%,
+      rgb(228, 10, 22) 90%,
+      rgb(62, 19, 38) 40%
+    );
 }
 .t {
   background-color: #000;
@@ -172,28 +185,29 @@ button {
   margin: auto;
 }
 .tranding h1 {
-  font-size: 24px;
+  font-size: 5vh;
   font-weight: 500;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-color);
+  padding-bottom: 15px;
 }
 .poster-main {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 40px;
+  padding: 20px;
   overflow-x: scroll;
 }
 .poster-main::-webkit-scrollbar {
   display: none;
 }
 .poster {
-  border-radius: 4px;
-  height: 250px;
-  width: 180px;
-  margin-top: 2%;
+  border-radius: 5px;
   position: relative;
   background-color: aliceblue;
-  margin: 20px;
+  display: flex;
+  gap: 20px;
 }
 .poster:hover {
   transform: scale(1.1);
@@ -207,10 +221,190 @@ button {
   line-height: 100px;
   -webkit-text-stroke: 2px white;
   top: 50%;
-  left: -12%;
+  left: -10%;
 }
 .poster img {
-  height: 250px;
-  width: 180px;
-  border-radius: 4px;
+  object-fit: fill;
+  border-radius: 5px;
+}
+.features {
+  background-color: #000;
+  padding-top: 70px;
+}
+.features-main {
+  max-width: 1200px;
+  margin: auto;
+}
+.reason h1 {
+  padding-bottom: 15px;
+  color: var(--text-color);
+  font-size: 5vh;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.reason-card-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+
+  gap: 10px;
+}
+.reason-card {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(25, 33, 69),
+    rgb(33, 14, 23)
+  );
+  position: relative;
+  border-radius: 10px;
+}
+.reason-card h1 {
+  color: var(--text-color);
+
+  font-size: 3vh;
+  font-weight: 500;
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.reason-card h5 {
+  text-align: justify;
+  color: var(--text-color);
+
+  font-size: 2.5vh;
+  font-weight: 400;
+  padding: 10px;
+  padding-bottom: 50%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.reason-card img {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+}
+.q-section {
+  background-color: #000;
+  padding-top: 50px;
+}
+.question-main {
+  max-width: 1200px;
+  margin: auto;
+}
+.qus-head h1 {
+  color: var(--text-color);
+
+  font-size: 5vh;
+  font-weight: 500;
+  padding-bottom: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.qus-list-main {
+  display: grid;
+  gap: 10px;
+}
+.question {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--toggle-text-bg-color);
+}
+.question h2 {
+  color: var(--text-color);
+  font-size: 2.5vh;
+  font-weight: 200;
+  font-family: sans-serif;
+  padding: 15px;
+}
+.question i {
+  font-size: 30px;
+  color: var(--text-color);
+}
+.question:hover {
+  background-color: #414141;
+}
+.second {
+  background-color: #000;
+  padding-top: 50px;
+}
+
+.footer {
+  background-color: #000;
+  padding-top: 70px;
+}
+.footer-main {
+  max-width: 1200px;
+  margin: auto;
+}
+.foot-head {
+  color: #b3b3b3;
+  font-size: 2vh;
+  font-weight: 400;
+}
+.footer-card-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.foot-card {
+  color: #b3b3b3;
+  margin-top: 40px;
+  line-height: 30px;
+  font-size: 2vh;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+}
+.last-lan {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 50px;
+  background-color: #000;
+}
+.sec-last {
+  background-color: #000;
+}
+.last-neflix-main {
+  background-color: #000;
+}
+.last-netflix {
+  max-width: 1200px;
+  margin: auto;
+  color: #b3b3b3;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 100px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .nav-con {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+  }
+  .nav-left img {
+    height: 100x;
+    width: 100px;
+  }
+  .email input {
+    padding: 20px 10px 20px 10px;
+  }
+  .button {
+    font-size: 2.5vh;
+    padding: 15px 5px 15px 5px;
+  }
+  .reason-card-main {
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
+  .foot-card {
+    font-size: 1.5vh;
+  }
 }
